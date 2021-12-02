@@ -1,0 +1,1361 @@
+<!--https://www.quackit.com/css/codes/marquees/-->
+<!DOCTYPE>
+<html lang="en">
+	<head>
+  <meta charset="utf-8">
+  <title>Parallel-events</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+	<link href="css/style.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+
+  <style>
+	nav .navbar-toggler-icon {
+		  color: white;
+		background: #280e3b;
+	  }
+	  nav ul{
+		   list-style: none;
+	  }
+	  li.nav-item:hover{
+		  color:yellow;
+		   background:#280e3b;
+	  }
+	  li.nav-item >.dropdown-menu
+{
+    
+	min-width: 100%;
+	text-align: left;
+	
+	  }
+		
+	  .dropdown-menu {
+		  position: relative;
+		  margin-top: 10px;
+	  }
+	  .dropdown-menu > ul >li{
+		  font-size:13px;
+		  padding: 5px;
+	  }
+	 
+	  .dropdown-menu > ul >li:hover a{
+		  font-size:13px;
+		  
+		  color: #280e3b;
+	  }
+	  
+	
+	  li.nav-item{
+		 
+		  text-transform: uppercase;
+		 font-weight: 700;
+		 list-style: none;
+		 font-size: 13px;
+	  }
+	  
+	  @media screen and  (max-width: 1024px) {
+   li.nav-item{
+		 
+		  text-transform: uppercase;
+		 
+		 list-style: none;
+		 font-size: 7px;
+	  }
+}
+	  
+	  nav a{
+		  color:black;
+	  }
+	  nav a:hover{
+		  color:#fb3;
+	  }
+	 
+@media screen and (max-width: 1024px) {
+	 nav ul li.nav-item{
+		 
+		  text-transform: uppercase;
+		 font-weight: 700;
+		 list-style: none;
+		 font-size: 10px;
+	  }
+	  }
+	li.dropdown >.dropdown-menu
+{
+    
+	min-width: 100%;
+	text-align: left;
+	
+	  }
+	  .dropdown-menu > *{
+		  min-width: 100%;
+		  padding: 0 20px 0 20px;
+		  white-space: nowrap;
+	  }
+	  .megamenu {
+    position:static;
+}
+.megamenu > .dropdown-menu {
+    min-width:100%;
+}
+	  .megamenu li{
+		text-transform: uppercase;
+		 font-weight: 700;
+		 list-style: none;
+		 font-size: 13px;  
+	  }
+	  .megamenu li:hover a{
+		color: #280e3b;  
+	  }
+	  
+@media screen and (min-width: 992px) {
+
+  .megamenu ul {
+     padding-bottom:15px;
+  }
+  
+  .megamenu > .dropdown-menu {
+     min-width: 800px;
+	 
+  } 
+	.megamenu > .dropdown-menu > *{
+		white-space: normal;
+	} 
+	
+}
+ nav{
+		   background: white !important;
+	  }
+	  #momo{
+		  background: white !important;
+	  }
+	/*  nav{
+		   background: white !important;
+	  }*/
+.warning-color {
+    background-color: #fb3!important;
+}
+
+  .card-header-bg{
+  background:linear-gradient( 45deg,
+	rgba(255,187,51,1)0%,
+	rgba(255,187,51,1)46%,
+	rgba(255,255,255,1)46%,
+	rgba(40,14,59,1)46%,
+	rgba(40,14,59,1)100%
+	
+	);
+  }
+  h5-responsive{
+  
+  font-size:135%;}
+	.top-bg{
+	
+	background:linear-gradient( 45deg,
+	rgba(255,255,255,1)0%,
+	rgba(255,255,255,1)5%,
+	rgba(241,231,103,1)5%,
+	rgba(255,187,51,1)5%,
+	rgba(255,187,51,1)100%
+	
+	);}  
+	  
+	  
+	#carousel {
+	width:255px;
+	height:290px;	
+	margin:0 auto;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:250px;
+	height:250px;
+	border:1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:750px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:250px;
+	height:250px;	
+	float:left;
+}
+
+#slides li img {
+	padding:5px;
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	background:url(arrow.gif) 0 -31px no-repeat; 
+}
+
+a#prev:hover {
+	background:url(arrow.gif) 0 0 no-repeat;
+}
+
+a#next {
+	background:url(arrow.gif) -32px -31px no-repeat; 
+}
+
+a#next:hover {
+	background:url(arrow.gif) -32px 0 no-repeat;
+}
+
+.clear {clear:both}  
+</style>
+</head>
+
+
+
+<body id="body">
+<section class=" p-3" style="background-color: #280e3b">
+    <div class="row m-0 p-0">
+        <div class="col-lg-7">
+           
+        </div>
+        <!-- <div class="col-lg-5" style="background-color: #ffb142">
+
+        </div> -->
+    </div>
+
+</section>
+<section class="right-top-bar" style="margin-top: -1.6rem;">
+    <div class="row m-0 p-0">
+        <div class="col-lg-7">
+
+        </div>
+        <div class="col-lg-5 p-3 top-bg" >
+            <p class="white-text p-0 m-0 pl-4 font-weight-bold text-white">SEAHF 2020 &ensp;&ensp;  
+				 
+				
+				  </p>
+        </div>
+    </div>
+
+</section>
+<section>
+    <div class="row p-0 mx-0 top-bar" style="background: url(img/bg.jpg);background-size: cover;margin-top:-2rem">
+        <div class="col-lg-2 text-center pt-2 px-0 mt-lg-3">
+            <!--<img src="" class="animated pulse "><br>
+                                                <strong>India</strong>
+                                                                <strong>Italy</strong>
+                                                                <strong>Tunisia</strong> -->
+                                                                </div>
+        <div class="col-lg-7 px-0">
+            <h3 class="h3 h3-responsive mt-lg-5 text-center" style="font-family: 'Impact', Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'cursive;font-size:20px; font-weight: bold; text-transform: uppercase;">
+			INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020</h3>
+
+        </div>
+        <div class="col-lg-3 text-center pt-4 px-0 mt-lg-3">
+            <img src="img/springer-logo.png"  class="animated pulse" width="180">
+
+
+        </div>
+    </div>
+</section>
+
+	
+<nav   class="navbar navbar-expand-lg sticky-top bg-light">
+  <a class="navbar-brand" href="#">IC<sup>2</sup>ISD’20</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">☰</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="index.html"><em class="fa fa-home"></em> Home</a> </li>
+      
+	<li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">COMMITTEES<span class="caret"></span></a>
+                <div class="dropdown-menu " style="min-width:100%">
+                    <ul>
+			  <li><a href="chairs.html">Program Chairs</a></li>
+              <li><a href="chairs.html#Publication_Chairs">Publication Chairs</a></li>
+			  <li><a href="chairs.html#Special_Sessions">Special Sessions Chairs</a></li>
+              <li><a href="committees.html">Local Organizing Committee</a></li>
+              <li><a href="committees.html#Steering_committee">Steering Committee</a></li>
+			  <li><a href="committees.html#Scientific_Committee">Scientific Committee</a></li>
+			  
+            </ul>
+                </div>
+            </li>	
+		
+	
+		
+   <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Program<span class="caret"></span></a>
+                <div class="dropdown-menu " style="min-width:100%">
+                    <ul>
+              
+			  <li><a href="program.html">Congress Program </a>
+						
+			  </li>
+				<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Special sessions</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Session 1</a></li>
+                          <li><a href="#">Session 2</a></li>
+                          <li><a href="#">Session 3</a></li>
+                          <li><a href="#">Session 4</a></li>
+                        </ul>
+                      </li>
+        
+            </ul>
+                </div>
+            </li>
+		
+	  <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">special issues<span class="caret"></span></a>
+                <div class="dropdown-menu " style="min-width:100%">
+                    <ul>
+			  <li><a href="special_issue_1.html">special issue 1</a></li>
+			  <li><a href="special_issue_2.html">special issue 2</a></li>
+			  <li><a href="special_issue_3.html">special issue 3</a></li>
+			  <li><a href="special_issue_4.html">special issue 4</a></li>
+			  <li><a href="special_issue_5.html">special issue 5</a></li>
+			  <li><a href="special_issue_6.html">special issue 6</a></li>
+			  <li><a href="special_issue_7.html">special issue 7</a></li>
+			  <li><a href="special_issue_8.html">special issue 8</a></li>
+					</ul>
+		        </div>
+	  </li>
+	 <li class="nav-item">
+        <a class="nav-link" href="Registration.html">Registration</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="Submission.html">Paper submission</a>
+      </li>
+		<li class="nav-item dropdown">
+		<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Training courses<span class="caret"></span></a>
+                <div class="dropdown-menu " style="min-width:100%">
+                    <ul>
+			  <li><a href="Training_courses1.html">T.C 1: Industry 4.0</a></li>
+              <li><a href="Training_courses2.html">T.C 2: Smart agronomy</a></li>
+			  <li><a href="Training_courses3.html">T.C 3: </a></li>
+              <li><a href="Training_courses4.html">T.C 4: </a></li>
+              
+            </ul>
+                </div>
+            </li>	
+	 <li class="nav-item">
+        <a class="nav-link" href="social-event.html">Social Event</a>
+      </li>
+		
+	<li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Venue | Accomodation<span class="caret"></span></a>
+                <div class="dropdown-menu " style="min-width:100%">
+                    <ul>
+              <li><a href="Venue-Travel-accomodation.html">VENU</a></li>
+              <li><a href="Venue-Travel-accomodation.html#Accomodation">Accomodation</a></li>
+			 
+            </ul>
+                </div>
+            </li>
+	
+	    <!--  <ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Venue | accomodation<span class="caret"></span></a>
+                <div class="dropdown-menu p-3">
+                    <div class="row">
+                        <ul class="list-unstyled col-lg-4 col-md-6"  role="menu">
+                            <h4>VENUE</h4>
+							<div class="row">
+							<div class="col-md-8">
+							 <li><a href="Venue-Travel-accomodation.html">1ST International Conference on Intelligent Systems and Devices (IC2ISD'20)| Catania-Italy, June 24-26, 2020</a></li>
+							</div>
+							<div class="col-md-4">
+							<img src="img/italy/IMG_3256.jpg" class="img-fluid img-thumbnail" width="280" height="280">
+							</div>
+							</div>
+                        </ul>
+                        
+                        <ul class="list-unstyled col-lg-4 col-md-6"  role="menu">
+                            <h4>Travel</h4>
+                            <div class="row">
+							<div class="col-md-8">
+							 <li><a href="Venue-Travel-accomodation.html#Travel">1ST International Conference on Intelligent Systems and Devices (IC2ISD'20)| Catania-Italy, June 24-26, 2020</a></li>
+							</div>
+							<div class="col-md-4">
+							<img src="img/catania.jpg" class="img-fluid img-thumbnail" width="280" height="280">
+							</div>
+							</div>
+                        </ul>
+                         
+					    <ul class="list-unstyled col-lg-4 col-md-6 " role="menu">
+                            <h4>Accomodation</h4>
+                            <div class="row">
+							<div class="col-md-8">
+							 <li><a href="Venue-Travel-accomodation.html#Accomodation">1ST International Conference on Intelligent Systems and Devices (IC2ISD'20)| Catania-Italy, June 24-26, 2020</a></li>
+							</div>
+							<div class="col-md-4">
+							<img src="img/italy/3.jpg" class="img-fluid img-thumbnail" width="280" height="280">
+							</div>
+							</div>
+                        </ul>
+                      
+                    </div>
+                </div>
+            </li>
+        </ul> -->
+		
+		<li class="nav-item">
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--==========================
+    Top Bar
+  ============================-->
+
+  <!--==========================
+    Header
+	
+	
+  ============================-->
+  
+  
+	 
+     <!--  <nav id="nav-menu-container" class="navbar navbar-expand-lg static-top ">
+    <a class="navbar-brand" href="#first"></a>
+    <button class="navbar-toggler hidden-lg-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        ☰
+    </button>
+	
+    <div class="collapse navbar-collapse" id="collapsingNavbar">
+		<ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="index.html"><i class="fa fa-home"></i>   SEAHF </a>
+            </li>
+        </ul>
+		 <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="index.html"><i class="fa fa-home"></i>   Home</a>
+            </li>
+        </ul>
+		
+		 <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="index.html">  Topics</a>
+            </li>
+        </ul>
+		
+		<ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="index.html">Paper Submission </a>
+            </li>
+        </ul>
+		
+		<ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="index.html">Registration </a>
+            </li>
+        </ul>
+		
+		<ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">COMMITTEES<span class="caret"></span></a>
+                <div class="dropdown-menu wow fadeIn" style="min-width:100%">
+                    <ul>
+              <li><a href="JAIHC.html">Local Organizing Committee</a></li>
+              <li><a href="HFCET.html">Steering Committee</a></li>
+			  <li><a href="EST.html">Scientific Committee</a></li>
+            </ul>
+                </div>
+            </li>
+        </ul>
+		
+		<ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CHAIRS<span class="caret"></span></a>
+                <div class="dropdown-menu wow fadeIn" style="min-width:100%">
+                    <ul>
+              <li><a href="JAIHC.html">Program Chairs</a></li>
+              <li><a href="HFCET.html">Publication Chairs</a></li>
+			  <li><a href="EST.html">Special Sessions Chairs</a></li>
+            </ul>
+                </div>
+            </li>
+        </ul>
+		
+        <ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conferences <span class="caret"></span></a>
+                <div class="dropdown-menu p-3">
+                    <div class="row wow fadeIn">
+                        <ul class="list-unstyled col-lg-3 col-sm-6 col-5" role="menu">
+                            <h4>ITALY</h4>
+                            <li><a href="#">1ST International Conference on Intelligent Systems and Devices (IC2ISD'20)| Catania-Italy, June 24-26, 2020</a></li>
+                            <li><img src="img/catania.jpg" class="img-fluid"></li>
+                        </ul>
+                        
+                        <ul class="list-unstyled col-lg-3 col-sm-6 col-5" role="menu">
+                            <h4>INDIA</h4>
+                            <li><a href="#">2nd International Conference on Smart Innovation, Ergonomics and Applied Human Factors | Punjab-India, February 3-5, 2020</a></li>
+                            <li><img src="img/punjab.jpg" class="img-fluid"></li>
+                        </ul>
+                            
+                        
+                        <ul class="col-lg-6 col-sm-6 list-unstyled" role="menu">
+                            <h4>TUNISIA</h4>
+							<div class="row">
+							<ul class="col-lg-6 col-sm-6" role="menu">
+							<li><a href="#">3rd Internatinal Congress On Smart Marketing, Business And Tourism Policy (ICSMBT) | Hammamet-Tunisia, March 20-22, 2020 </a></li>
+							<li><a href="#">3rd International congress on Hydrogen & Fuel Cell Energy Technologies | Hammamet-Tunisia, March 20-22,2020 </a></li>
+							<li><a href="#">3rd International congress on Smart Sensing and Artificial Intelligence | Hammamet-Tunisia, March 20-22, 2020 </a></li>
+							</ul>
+							<ul class="col-lg-6 col-sm-6 list-styled" role="menu">
+							<li><a href="#">3rd International congress on Telecommunications and Computing Technologies (ICTCT’20) | Hammamet-Tunisia, March 20-22</a></li>
+							<li><a href="#">3rd International Conference on Green Energy Production and Transfer Systems (ICGETS20)| Hammamet-Tunisia, March 20-22</a></li>
+							<li><img src="img/Royal_Azur_Thalasso_Golf_3.jpg" width="100%" height="150px" class="align-baseline"></li>
+							</ul>
+							
+							</div>
+							
+                            
+                        </ul>
+                      
+                    </div>
+                </div>
+            </li>
+        </ul>
+		
+	    <ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Events <span class="caret"></span></a>
+               
+            </li>
+        </ul>
+		
+		<ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Journals Special issues<span class="caret"></span></a>
+                <div class="dropdown-menu wow fadeIn" style="min-width:100%">
+                    <ul>
+              <li><a href="JAIHC.html">JAIHC</a></li>
+              <li><a href="HFCET.html">HFCET</a></li>
+              <li><a href="EST.html">EST</a></li>
+              <li><a href="ITANN.html">ITANN</a></li>
+			  <li><a href="EECSSB.html">EECSSB</a></li>
+			  <li><a href="GEPTS.html">GEPTS</a></li>
+			  <li><a href="REFJ.html">REFJ</a></li>
+				<li><a href="IJI.html">IJI</a></li>
+            </ul>
+                </div>
+            </li>
+        </ul>
+		
+		<!--
+		<ul class="nav navbar-nav">
+			
+            <li class="nav-item dropdown megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conferences <span class="caret"></span></a>
+                <div class="dropdown-menu p-3">
+                    <div class="row">
+                        <ul class="list-unstyled col-lg-3 col-sm-6 col-5" role="menu">
+                            <h4>Menu</h4>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more link</a></li>
+                        </ul>
+                        <div class="col-lg-3  col-sm-6 col-7">
+                            <h4>Login</h4>
+                            <form action="[YOUR ACTION]" method="post" role="form" class="form-horizontal">
+                                <input class="form-control" id="inputEmailx" placeholder="Email" type="email" style="margin-bottom:.5em">
+                                <input class="form-control" id="inputPasswordx" placeholder="Password" type="password" style="margin-bottom:.5em">
+                                <div class="checkbox">
+                                    <label class="small">
+                                        <input type="checkbox"> remember me</label>
+                                </div>
+                                <hr>
+                                <input class="btn btn-primary btn-block" type="submit" name="commit" value="Sign In">
+                            </form>
+                        </div>
+                        <ul class="col-lg-3 col-sm-6 list-unstyled" role="menu">
+                            <li><h4>Options</h4></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="btn btn-primary pull-right">OK</a></li>
+                            <li>
+                                <p class="small text-muted">small text here</p>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled col-lg-3 col-sm-6" role="menu">
+                            <li><h4>More</h4></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      
+		-->
+		<!--
+		<ul class="nav navbar-nav ">
+            <li class="nav-item">
+               <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+       
+		<ul class="nav navbar-nav ">
+            <li class="nav-item">
+               <a href="#contact">contact</a>
+            </li>
+        </ul>
+		
+    </div>
+</nav> -->
+	
+
+    
+  <!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+  </ol>
+  <div class="carousel-inner " role="listbox">
+  <div class="carousel-item active">
+  <img src="img/italy/1.jpg" alt="...">
+		  <div class="carousel-caption">
+    <h3>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020</h3>
+                <p><div>
+			<button class="btn btn-lg btn-responsive"> EXPLORE</button>
+		</div></p>
+  </div>
+</div>
+   
+    <div class="carousel-item ">
+     <img src="img/italy/2.jpg" alt="...">
+      <div class=" carousel-caption ">
+    <h3>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020 </h3>
+                <p><div>
+			<button class="btn btn-lg btn-responsive"> EXPLORE</button>
+		</div></p>
+  
+  </div>
+</div>
+	 <div class="carousel-item">
+     <img src="img/italy/3.jpg" alt="...">
+      <div class=" carousel-caption ">
+    <h3>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020</h3>
+                <p><div>
+			<button class="btn btn-lg btn-responsive"> EXPLORE</button>
+		</div></p>
+  
+  </div>
+</div>
+    <div class="carousel-item">
+     <img src="img/italy/4.jpg" alt="...">
+      <div class=" carousel-caption ">
+    <h3>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020 </h3>
+                <p><div>
+			<button class="btn btn-lg btn-responsive"> EXPLORE</button>
+		</div></p>
+  
+  </div>
+</div>
+
+ 
+ 
+  <div class="carousel-item ">
+		 <img src="img/catania.jpg" alt="...">
+      <div class=" carousel-caption ">
+        <h3>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) | Catania-Italy, June 24-26, 2020</h3>
+                <p>
+		<div>
+			<button class="btn btn-lg btn-responsive"> EXPLORE</button>
+		</div>
+			</p>
+			
+</div>
+    </div>
+ 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+	<div id="news-bar">
+	<div class="row-fluid">
+	<div class="latest_newsarea"> <span>Last news</span>
+		<marquee  loop="-1" onMouseOver="this.stop();" onMouseOut="this.start();">
+      <ul class="news_sticker">
+        <li><a href="#"><strong>Invited session proposal deadline: </strong> February 15, 2020 23:59 CET </a></li>
+        <li><a href="#"><strong>Paper Submission Opening: </strong>  March 1, 2020 23:59 CET </a></li>
+        <li><a href="#"><strong>Final Submission Deadline: </strong> April 1, 2020 23:59 CET  </a></li>
+        <li><a href="#"><strong>Assignment of Reviewers: </strong>  March 2, 2020 23:59 CET  </a></li>
+        <li><a href="#"><strong>Final Review deadline: </strong>  April 10, 2020 23:59 CET  </a></li>
+        <li><a href="#"><strong>Decision: </strong>  April 15, 2020 23:59 CET  </a></li>
+        <li><a href="#"><strong>Final paper upload: </strong>  May 1, 2020 23:59 CET  </a></li>
+        
+		</ul>
+			</marquee>
+    </div>
+	</div>
+	</div>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+	  <div class="container-fluid">
+    <div class="row ">
+	<!-- Right----->
+		<div class="col-lg-3 ">
+			 <div class="row p-0 m-0">
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white">Important dates</h5>
+            </div>
+            <div class="card-body">
+                                    <div class="text-left">
+                        <b>Invited session proposal deadline:</b> February 15, 2020 23:59 CET <br/>
+						<b>Paper Submission Opening: </b> March 1, 2020 23:59 CET <br/>
+						<b>Final Submission Deadline:</b> April 1, 2020 23:59 CET <br/>
+						<b>Assignment of Reviewers: </b> March 2, 2020 23:59 CET <br/>
+						<b>Final Review deadline: </b> April 10, 2020 23:59 CET <br/>
+						<b>Decision: </b> April 15, 2020 23:59 CET <br/>
+						<b>Final paper upload: </b> May 1, 2020 23:59 CET <br/>
+                                  </div>
+                    
+
+                            </div>
+        </div>
+    </div>
+   
+
+    <div class="col-lg-12 mb-2">
+         <div class="card">
+            <div class="card-header white-text card-header-bg" >
+              <h5 class="h5 h5-responsive text-center text-white">Call for paper</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/CFP_001.png" class="img img-responsive img-thumbnail" width="200" height="220px">
+					 <img src="img/CFP_002.png" class="img img-responsive img-thumbnail" width="200" height="220px">
+                </div>
+                <p class="text-center"><i class="fa fa-download"></i><a href="img/CFP.pdf" class="download"> Download the CFP</a> <br></p>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+   
+</div> 
+	
+			</div>
+		
+	<div class="col-lg-6 ">
+           
+                   
+            <div class="col-lg-12 mt-2">
+                <div class=" z-depth-3">
+                 
+					
+
+					
+<div id="Local_committee" class="card box">
+						<div class="section-header">
+          <h2>Parallel Events</h2>
+          
+        </div>
+   <h4>Workshop</h4>
+     
+	<p class="text-justify">The purpose of workshops is to provide a more interactive and focused platform for presenting and discussing new and emerging ideas. The format of paper presentations may include oral presentations, poster presentations, keynote lectures and panels. Depending on the number of presentations, workshops can be scheduled for 1 day.</p>
+	
+	<h4>Special Session</h4>
+     
+	<p class="text-justify">Special sessions are very small and specialized events to be held during the conference as a set of oral and poster presentations that are highly specialized in some particular theme or consisting of the works of some particular international project. The goal of special sessions (minimum 4 papers/ maximum 9) is to provide a focused discussion on innovative topics. All accepted papers will be published in a special section of the conference proceedings book, under an ISBN reference and on CD-ROM support.</p>
+	
+	<h4>Tutorial</h4>
+     
+	<p class="text-justify">The role of the tutorials is to provide a platform for a more intensive scientific exchange amongst researchers interested in a particular topic and as a meeting point for the community. Tutorials complement the depth-oriented technical sessions by providing participants with broad overviews of emerging fields. A tutorial can be scheduled for 1 or 3 hours.</p>
+
+	<h4>Panel</h4>
+     
+	<p class="text-justify">A panel is basically a one and a half hour to 2 hours session in which four to six speakers – distinguished members of the scientific and/or enterprise community, briefly present different perspectives/opinions on key issues with the goal of stimulating a lively, controversial and provocative discussion. Panelists are expected to actively debate one another and engage the audience to help broaden understanding of the technologies and issues. Two types of panels are to be considered: Research Panels oriented to the academic community and focused on the discussion of research topics and Industrial Panels oriented to promote knowledge exchanges between academia and industry.</p>
+	
+	<h4>Open Communications</h4>
+     
+	<p class="text-justify">
+	<ul>
+	<li>Open Communications provide researchers and practitioners with a simple and concise, yet exciting and interactive opportunity to present their research, case-studies, novel approaches, techniques or technologies to the conference audience. 
+   </li><br/>
+	<li>Speakers can submit either a 1-page abstract or a previously published work, which will be screened by a panel of experts including the conference and program chairs. Open Communications will be advertised in the conference program and abstracts will be included in a book of abstracts, but not published in the proceedings.</li>
+	</ul>
+	</p>
+
+	</div>
+
+		
+<!-- Contact Section
+    ============================-->
+   
+
+					
+                </div>
+            </div>
+        </div>
+             <!-- centered -->
+			
+			<div class="col-lg-3">
+			 <div class="row p-0 m-0">
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white ">Partners</h5>
+            </div>
+            <div class="card-body">
+                                    <div class="text-center">
+                        <img src="img/ifgict.png" class="img img-responsive img-thumbnail" width="120" height="160">
+                    </div>
+                    <p class="text-center">IFGICT<br></p>
+                    <p class="text-center">IFGICT will award 3 Green IT Professional Exam Certifications + Course material to best 3 papers in the conference<br></p>
+
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white">Paper submission</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/AIHC.jpg" class="img img-responsive img-thumbnail">
+                </div>
+                <p class="text-center">Journal of Ambient Intelligence and Humanized Computing<br></p>
+                <div class="text-center">
+                    <img src="img/springer-300-250.jpg" class="img img-responsive img-thumbnail" width="150">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white">Special issue</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/Else.png" class="img img-responsive img-thumbnail" width="120" height="160px">
+                </div>
+                <p class="text-center">Special issue on the International Journal of Hydrogen Energy.<br></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white">Special issue</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/IJHE.png" class="img img-responsive img-thumbnail">
+                </div>
+                <p class="text-center">International Journal of Hydrogen Energy (IJHE).<br></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg">
+                <h5 class="h5 h5-responsive text-center text-white">Special issue</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/alg.jpg" class=" img-thumbnail" width="120" height="200">
+                </div>
+                <p class="text-center">Algerian Journal of Environmental Science and Technology.<br></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-12 mb-2">
+        <div class="card">
+            <div class="card-header white-text card-header-bg" >
+                <h5 class="h5 h5-responsive text-center text-white">Special issue</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="text-center">
+                    <img src="img/Sensors.png" class="img img-responsive img-thumbnail">
+                </div>
+                <p class="text-center">Algerian Journal of Environmental Science and Technology.<br></p>
+
+            </div>
+        </div>
+    </div>
+</div> 
+	
+			</div>
+                   </div>
+				   </div>
+        
+
+    
+
+    </section>
+		
+    
+	  
+	  
+	     <section id="clients" class="wow fadeInUp ">
+      <div class="container">
+        <div class="section-header">
+          <h2>Partners</h2>
+          
+        </div>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/Partners/5.jpg" alt="">
+		   <img src="img/Partners/4.jpg" alt="">
+          <img  src="img/Partners/1.jpg" alt="">
+          <img  src="img/Partners/3.jpg" alt="">
+          <img src="img/Partners/2.jpg" alt="">
+          <img src="img/Partners/6.jpg" alt="">
+          <img src="img/Partners/8.jpg" alt="">
+          <img src="img/Partners/7.jpg" alt="">
+         
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+    <!--==========================
+     
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+ <!-- Footer -->
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 footer-socoial-links wow pulse" data-wow-delay="0.5s" >
+<h5>INTERNATIONAL CONFERENCE on Control of Intelligent Systems and Devices (IC<sup>2</sup>ISD’20) </h5>
+	<h3>CATANIA-ITALY, JUNE 24-26, 2020</h3>
+<div class="text-lg-left text-md-center text-white">
+
+<i class="fa fa-envelope"></i>&ensp;&ensp;&ensp;secretariat@new-technology.net<br/>
+
+
+</div>	
+</div>	
+<div class="col-lg-2 footer-socoial-links text-left wow fadeInUp" data-wow-delay="0.7s">
+<h5> Links</h5>
+<ul style="padding-left:5px">
+<li ><a href="index.html">Home</a></li>
+<li><a href="index.html#Topics">Topics</a></li>
+<li><a href="committees.html">Committees</a></li>
+<li><a href="chairs.html">Chairs</a></li>
+<li><a href="Program.html">Congress Program</a></li>
+<li><a href="Special_issues.html">Special issues</a></li>
+<li><a href="Submission.html">Paper submission</a></li>
+<li><a href="Venue-Travel-accomodation.html">Venue | Accomodation</a></li>
+<li><a href="social-event.html">Social events</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</div>	
+<div class="col-lg-3 footer-socoial-links wow fadeInUp" data-wow-delay="1.2s">
+<h5>Follow us</h5>
+<ul class="social-network">
+<div class="social-circle">
+<li><a href="#" ><i class="fa fa-facebook"></i>  </a>  </li>
+<li><a href="#" ><i class="fa fa-twitter"></i>  </a>  </li>
+<li><a href="#" ><i class="fa fa-youtube"></i>  </a>  </li>
+
+</div>
+
+</ul>
+</div>
+<div class="col-lg-4 footer-socoial-links text-left wow fadeInUp" data-wow-delay="1.7s">
+<h5>Image gallery</h5>
+<div class="row mb-4">
+<div class="col-sm-3">
+<a href="gallery.html"><img src="content/media/images/5.jpeg" class="img-fluid"></a>
+</div>
+<div class="col-sm-3">
+<a href="gallery.html"><img src="content/media/images/9.jpeg"  class="img-fluid "></a>
+</div>
+<div class="col-sm-3">
+<a href="gallery.html"><img  src="content/media/images/15.jpeg"  class="img-fluid "></a>		
+</div>
+<div class="col-sm-3">
+	
+</div>
+
+</div>
+<div class="row mb-4">
+<div class="col-sm-3">
+<a href="gallery.html"><img src="content/media/images/17.jpeg" class="img-fluid"></a>	
+</div>
+<div class="col-sm-3">
+<a href="gallery.html"><img src="content/media/images/21.jpeg" class="img-fluid "></a>	
+</div>
+<div class="col-sm-3">
+<a href="gallery.html"><img src="content/media/images/40.jpeg" class="img-fluid"></a>	
+</div>
+<div class="col-sm-3">
+		
+</div>
+
+</div>
+</div>	
+</div>	
+	<div class="copyright">
+        &copy; Copyright <strong>Universided Politecnica de Madrid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="#">Universided Politecnica de Madrid</a>
+      </div>
+</div>
+</footer>
+<!-- Footer --><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+<script>
+$(document).ready(function(){
+	
+	/*$(".dropdown").click(function(){
+		
+		$(".dropdown-menu").fadeIn('slow');
+	});*/
+	
+});
+</script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+	<script>
+	var offset = 0;
+    var count = $(".slide-item-wrapper > * > *").length;
+		var interval = setInterval(slideSwitch, 3000);
+
+		
+	function slideSwitch() {
+	
+    offset = (offset - 220) % (count * 220); // 104px div height (incl margin)
+    $(".slide-item-wrapper > *").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  };
+    
+
+
+    
+    $(".slide-item-wrapper li").hover(function () {
+        clearInterval(interval);
+    }, function () {
+        interval = setInterval(slideSwitch, 3000); 
+    });
+
+ $("a.next").click(function(){
+ 
+     
+	offset = (offset + 220) % (count * 220); // 104px div height (incl margin)
+    $(".slide-item-wrapper > * ").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  }); 
+
+$("a.previous").click(function(){
+ 
+     
+	offset = (offset - 220) % (count * 220); // 104px div height (incl margin)
+    $(".slide-item-wrapper > * ").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  }); 
+	</script>
+	<!--
+		
+		<script>
+	var offset = 0;
+    var count = $(".slide-item-wrapper > * > *").length;
+		var interval = setInterval(slideSwitch, 3000);
+
+		
+	function slideSwitch() {
+	
+    offset = (offset - 200) % (count * 200); // 104px div height (incl margin)
+    $(".slide-item-wrapper > *").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  };
+    
+
+
+    
+    $(".slide-item-wrapper li").hover(function () {
+        clearInterval(interval);
+    }, function () {
+        interval = setInterval(slideSwitch, 3000); 
+    });
+
+ $("a.next").click(function(){
+ 
+     
+	offset = (offset - 200) % (count * 200); // 104px div height (incl margin)
+    $(".slide-item-wrapper > * ").prev().css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  }); 
+		</script>
+		-->
+		   
+	
+
+
+<!--
+  <script>
+	   var offset = 0;
+var count = $(".slide-item-wrapper > ul.timeline ").length;
+	function slideSwitch() {
+		
+  
+    offset = (offset - 200) % (count * 200); // 104px div height (incl margin)
+    $(".slide-item-wrapper > *").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  };
+    
+
+$(function () {
+    var interval = setInterval(slideSwitch, 3000);
+
+    $(".slide-item-wrapper > ul.timeline > li").hover(function () {
+        clearInterval(interval);
+    }, function () {
+        interval = setInterval(slideSwitch, 3000); 
+    });
+  $(".next").click(function () {
+        $(".slide-item-wrapper > *").css({
+      "transform": "translateY(" + offset + "px)"})
+    
+});	
+	
+	</script>-->
+	<!--
+   <script>
+	function slideSwitch() {
+		
+    var offset = 0;
+var count = $(".slide-item-wrapper > * > *").length;
+    offset = (offset - 200) % (count * 200); // 104px div height (incl margin)
+    $(".slide-item-wrapper > *").css({
+      "transform": "translateY(" + offset + "px)",
+    },3000);
+  };
+    
+
+$(function () {
+    var interval = setInterval(slideSwitch, 3000);
+
+    $(".slide-item-wrapper li").hover(function () {
+        clearInterval(interval);
+    }, function () {
+        interval = setInterval(slideSwitch, 3000); 
+    });
+
+});	
+	</script>
+
+-->
+	
+<!--	
+<script>
+$(function () {
+   
+var offset = 0;
+var count = $(".slide-item-wrapper > ul.timeline ").length;
+	var interval = setInterval(slideSwitch, 3000);
+    $(".next").click(function () {
+		clearInterval(interval);
+        offset = (offset - 200) % (count * 200); // 104px div height (incl margin)
+    $(".slide-item-wrapper > ul.timeline  " ).css({
+      "transform": "translateY(" + offset + "px)",
+    });
+    });
+
+});	
+	</script>
+	-->
+	
+	<!--
+<script>
+	
+	$(document).ready(function () {
+
+    function move(direction) {
+        var carousel = $('#carousel ul');
+        if (!carousel.is(':animated')) {
+            if (direction === 'left') {
+                carousel.animate({
+                    marginTop: 280
+                }, 1000, function () {
+                    carousel.find("li:last").after(carousel.find("li:first"));
+                    carousel.css('marginTop',0);
+                });
+            } else {
+                carousel.find('li:first').before(carousel.find('li:last'));
+                carousel.css('marginTop', '-280px').animate({
+                    marginTop: 0
+                }, 1000);
+            }
+        }
+    }
+
+    var t = setInterval(function () {
+        move('left');
+    }, 5000);
+
+    $('#left').click(function () {
+        move('top');
+    });
+
+    $('#right').click(function () {
+        move('buttom');
+    });
+});
+	</script>
+-->
+	<!--
+	<script>
+	$(document).ready(function () {
+
+    $('.btn-vertical-slider').on('click', function () {
+        
+        if ($(this).attr('data-slide') == 'next') {
+            $('#myCarousel2').carousel('next');
+        }
+        if ($(this).attr('data-slide') == 'prev') {
+            $('#myCarousel2').carousel('prev')
+        }
+
+    });
+});
+	</script>
+
+-->
+
+</body>
+</html>
